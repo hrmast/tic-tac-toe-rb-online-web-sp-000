@@ -123,4 +123,3 @@ def play(board)
     else full?(board)
 
   end
-end
