@@ -102,7 +102,7 @@ def draw?(board)
 end
 
 def over?(board)
-  if draw?(board) || won?(board)
+  if draw?(board) || won?(board) 
     return true
   end
 end
@@ -113,10 +113,8 @@ def winner(board)
 end
 
 def play(board)
-  control = 0
-  while control < 3
+  until over?(board)
     turn(board)
-    control += 1
   end
     if won?(board)
       winner(board) == "X" || winner(board) == "O"
