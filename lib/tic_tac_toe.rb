@@ -66,7 +66,7 @@ end
 def current_player(board)
   if turn_count(board) == 4 % 2
     return "X"
-  elsif turn_count(board) == 15 % 2
+  else turn_count(board) == 15 % 2
     return "O"
   end
 end
